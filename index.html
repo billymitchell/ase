@@ -12,29 +12,24 @@
 
 <body>
     <div class="wrapper">
-        <form>
+        <form class="ase_lookup">
             <div class="mb-3">
                 <label for="ase-id" class="form-label">ASE ID</label>
-                <input type="email" class="form-control" id="ase-id" aria-describedby="ase-id-help">
+                <input type="text" class="form-control" id="ase-id" aria-describedby="ase-id-help">
                 <div id="ase-id-help" class="form-text">Please enter a valid ASE ID.</div>
             </div>
             <div class="mb-3">
                 <label for="ase-tech-last-name" class="form-label">Technician Last Name</label>
-                <input type="password" class="form-control" id="ase-tech-last-name" aria-describedby="ase-id-help">
+                <input type="text" class="form-control" id="ase-tech-last-name" aria-describedby="ase-id-help">
                 <div id="ase-id-help" class="form-text">The technician's last name must match with the ID on record.
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="ase_api_request btn btn-primary">Unlock Product</button>
+            <hr>
         </form>
-        <hr>
         <!-- Brightsites From -->
         <form class="simple_form edit_website_product" id="edit_website_product" novalidate="novalidate"
             action="/products/1247302/populate" accept-charset="UTF-8" method="post">
-            <label>Quantity</label>
-            <div id="quantity">
-                <input type="number" min="0" data-type="quantity" class="form-control amount" name="product[quantity]"
-                    value="1">
-            </div>
             <div class="add-to-cart-area">
                 <input type="submit" name="add_to_cart" value="Add to Cart" class="btn primary add-to-cart">
             </div>
