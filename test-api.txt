@@ -12,7 +12,7 @@ var requestOptions = {
   //let LastName = "Zzdemo";
   let LastName = "zzdemo";
   //let LastName = "Zdemo";
-let Key = process.env.ASE_API_KEY;
+  let Key = "";
   
   async function getASEData() {
     try {
